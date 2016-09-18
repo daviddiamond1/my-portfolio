@@ -1,0 +1,164 @@
+---
+
+---
+@charset "utf-8";
+$primary: #ABC1C9;
+body { margin: 0px; }
+
+// padding //
+.p__16 {
+  height: 16px;
+}
+
+// utility classes //
+.u__flex {
+  display: flex;
+}
+
+// colors //
+.c__project1 {
+  background-color: #E1EFF4;
+}
+.c__project1Text {
+  color: #516268;
+}
+.c__project2 {
+  background-color: #FCF6EB;
+}
+.c__project2Text {
+  color: #56544D;
+}
+
+// text styles //
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.t__left {
+  text-align: left;
+}
+.t__center {
+  text-align: center;
+}
+.t__xxl {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: $primary;
+}
+.t__l {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+  line-height: 48px;
+}
+.t__m {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  line-height: 48px;
+}
+.t__smallCaps {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.t__emphasizedText {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #88A0A9;
+}
+// nav bar //
+.nav_container {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+.nav_content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.nav-name_container {
+  position: absolute;
+  left: 40%;
+}
+.nav-name_container:hover {
+  opacity: 0.7;
+}
+.nav-name {
+  margin-bottom: 0px;
+}
+.nav-name_description {
+  margin-top: 0px;
+}
+.nav-links_container {
+  width: 100%;
+  display: flex;
+}
+.nav-links_pages {
+    width: 50%;
+    display: block;
+    padding-left: 72px;
+}
+.nav-links_social {
+  width: 50%;
+  text-align: right;
+  padding-right: 72px;
+}
+.nav_link {
+  padding: 24px;
+}
+
+// social account dropdown //
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown_content {
+  display: none;
+  position: absolute;
+  margin-right: 24px;
+}
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+// project grid //
+.grid {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.grid_row {
+  height: 50%;
+  display: flex;
+  margin-left: 0px;
+}
+.large_project {
+  height: 100%;
+  width: 50%;
+  margin-right: 32px;
+  margin-left: 0px;
+}
+.small_project {
+  height: 50%;
+  width: 50%;
+  margin-left: 32px;
+  margin-right: 0px;
+}
+.project_inner {
+  margin-left: 56px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+.project_title {
+  width: 75%;
+}
+.project_inner-text {
+  width: 50%;
+}
+.project_inner-image {
+  width: 50%;
+}

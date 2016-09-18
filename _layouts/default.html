@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Work+Sans:600,700" rel="stylesheet">
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+  <body>
+    <div class="nav_container">
+        <div class="nav_content">
+          <div class="nav-name_container">
+            <a href="http://iamdavid.xyz">
+              <h1 class="t__xxl nav-name">David Diamond</h1>
+              <h2 class="t__smallCaps nav-name_description">Product Designer</h2>
+            </a>
+          </div>
+        <div class="nav-links_container">
+          <div class="nav_links nav-links_pages">
+            <a href="/" class="t__emphasizedText" "nav_link">Work</a>
+            <a href="/about" class="t__emphasizedText nav_link">About</a>
+          </div>
+          <div class="nav_links nav-links_social">
+            <a href="/photos" class="t__emphasizedText nav_link">Photos</a>
+            <div class="dropdown">
+              <a href=" " class="t__emphasizedText dropdown_toggle nav_link">Social</a>
+              <div id="dropdown" class="dropdown_content">
+                <div class="p__16"></div>
+                <a class="t__emphasizedText dropdown_link" href="http://twitter.com/david_diam">Twitter</a>
+                <div class="p__16"></div>
+                <a class="t__emphasizedText dropdown_link" href="http://medium.com/@david_diam">Medium</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ content }}
+  </body>
+</html>
