@@ -35,6 +35,9 @@ a:hover::after {
 .p__8 {
   padding: 8px;
 }
+.p__8-top {
+  padding-top: 8px;
+}
 .p__16 {
   padding: 16px;
 }
@@ -73,6 +76,9 @@ a:hover::after {
 }
 .p__120-bottom {
   padding-bottom: 120px;
+}
+.m__16-left {
+  margin-left: 16px;
 }
 
 // colors //
@@ -152,6 +158,13 @@ h3 {
   font-weight: 300;
   font-size: 21px;
   color: #516268;
+}
+.t__deemphasizedText {
+  font-family: "leitura-news", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  color: #3C3C3C;
 }
 // nav bar //
 .nav_container {
@@ -238,20 +251,19 @@ h3 {
 
 // project grid //
 .container_main-content {
-  margin-top: 56px;
+  margin-top: 80px;
   padding-left: 136px;
   padding-right: 136px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 1024px) {
-  .gc_center {
+  .col_center {
     margin-left: 24px;
     margin-right: 24px;
   }
 }
 .tile {
-  margin-top: 24px;
   margin-bottom: 24px;
   overflow: hidden;
   min-width: 288px;
@@ -287,7 +299,7 @@ h3 {
 }
 
 // Journal feature //
-  .jf_heading {
+  .label {
   background-color: #fff;
   margin-top: 0px;
   padding-left: 8px;
@@ -317,12 +329,12 @@ h3 {
 }
 
 // Post layout styles //
-@media screen and (min-width: 1024px)	 {
   .post_header {
     background-size: cover;
+    background-position: center center;
     height: 248px;
   }
-}
+
 .title_container {
   top: 280px;
 }
@@ -333,14 +345,14 @@ h3 {
   margin-bottom: 8px;
 }
 .post_header-container {
-  margin-bottom: 56px;
+  margin-bottom: 40px;
 }
 .opt_label {
   text-align: center;
 }
 @media screen and (min-width: 1024px)	 {
   .options_card {
-    padding: 40px;
+    padding: 48px;
     float: left;
     margin-right: 32px;
   }
@@ -354,4 +366,74 @@ h3 {
 }
 .post_content {
   padding-right: 32px;
+}
+.details_container {
+  margin-top: 40px;
+  padding: 32px;
+  border-style: solid;
+  border-width: 1px;
+}
+.details {
+  padding-left: 0px;
+}
+.detail_numeral {
+  font-size: 130px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  z-index: -3;
+  color: rgba(220, 209, 244, 0.61);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.detail_numeral::after {
+  background-image: url(http://i.imgur.com/ZNWQkfr.png);
+  background-size: cover;
+  content: " ";
+  position: absolute;
+  height: 120%;
+  width: 150%;
+  top: 0;
+  background-position-y: -27px;
+  background-position-x: -30px;
+}
+.detail_title {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: auto;
+  overflow: hidden;
+}
+.detail_content {
+  display: flex;
+}
+.detail_description {
+  padding-right: 40px;
+}
+.video_container {
+  position: relative;
+}
+.video_overlay {
+  position: absolute;
+  height: 96%;
+  width: 100%;
+  top: 10px;
+  background-image: linear-gradient(-180deg, rgba(156,54,252,0.15) 0%, rgba(71,57,229,0.30) 100%);}
+.play_button {
+  background: none;
+  border: none;
+  z-index: 99;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+.play_button:hover {
+  opacity: .75;
 }

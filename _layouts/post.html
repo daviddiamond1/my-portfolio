@@ -13,6 +13,8 @@
     <!--<![endif]-->
     <script src="https://use.typekit.net/vdr7tuq.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
   </head>
   <body>
     <div class="nav_container">
@@ -46,7 +48,7 @@
     <div class="container_main-content">
       <div class="post_header-container">
         <div class="post_header" style="background-image: url({{ page.image }})">
-          <div class="jf_heading title_container">
+          <div class="label title_container">
             <h1 class="post_title t__l">{{ page.title }}</h1>
             <h2 class="post_description t__lightText">{{ page.description }}</h2>
           </div>
@@ -86,5 +88,7 @@
     <div class="post_content">
       {{ content }}
     </div>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
