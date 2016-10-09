@@ -16,6 +16,14 @@
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
+    <!-- TODO: remove this -->
+    <div class="alert_container">
+      <div class="alert_content">
+        <h1 class="t__smallCaps" style="font-weight: 600; margin-top: 0px; color: #fff; margin-bottom: 8px;">🚨 This is a pre-release version of my portfolio 🚨</h1>
+        <h2 class="t__s" style="color: #fff; margin-top: 0px; margin-bottom: 0px;">Hey! Thanks for checking out my work. This is a very early version of my site so it's still a little rough around the edges. You should view it on desktop because not all of the pages are responsive yet. Cheers - David.</h2>
+      </div>
+    </div>
+    <!-- End alert -->
     <div class="nav_container">
         <div class="nav_content pure_g">
           <div class="pure-u-1 pure-u-lg-1-3 nav_name-container">
@@ -65,24 +73,30 @@
           </svg>
         </button>
       </span>
-      <video id="video" width="100%" height="586">
+      <video id="video" width="100%" height="100%">
         <source src="{{ page.videoUrl }}" type="video/mp4">
       </video>
     </div>
     <div class="jf_container options_card">
-      <div class="opt_twitter">
-        <svg class="opt_icon" width="48px" height="40px" viewBox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-                <linearGradient x1="0%" y1="-10.4963859%" x2="100%" y2="125.689171%" id="linearGradient-1">
-                    <stop stop-color="#343AE0" offset="0%"></stop>
-                    <stop stop-color="#9B35FF" offset="42.1157526%"></stop>
-                    <stop stop-color="#E56464" offset="100%"></stop>
-                </linearGradient>
-            </defs>
-            <path d="M48,4.73405556 C46.2339076,5.51667721 44.3359596,6.04561788 42.3439043,6.2835096 C44.3772194,5.0656303 45.9385932,3.13723369 46.6738944,0.839543523 C44.771206,1.96707309 42.6636234,2.78601008 40.4204982,3.22740799 C38.6240316,1.31497609 36.0646988,0.119903523 33.2323494,0.119903523 C27.7936135,0.119903523 23.3842642,4.52563715 23.3842642,9.95977878 C23.3842642,10.7309971 23.4715242,11.4820402 23.6393723,12.2022065 C15.4548447,11.7918608 8.19857347,7.87436662 3.34151213,1.92110876 C2.49384396,3.37442367 2.00820805,5.06475312 2.00820805,6.86806359 C2.00820805,10.28188 3.74691101,13.2937716 6.38929003,15.0583106 C4.77489301,15.0072587 3.25653462,14.5646327 1.92867332,13.8276245 C1.92797103,13.8686766 1.92797103,13.9099041 1.92797103,13.9513071 C1.92797103,18.718966 5.32250631,22.6961086 9.82754307,23.5999567 C9.00111928,23.8248662 8.1311533,23.9450401 7.23292,23.9450401 C6.59839789,23.9450401 5.98143312,23.8834619 5.38026994,23.7685511 C6.63333699,27.6779752 10.2701635,30.5228514 14.579436,30.6023241 C11.2091298,33.2414135 6.96288818,34.8145514 2.34917151,34.8145514 C1.55435093,34.8145514 0.770415889,34.7680608 0,34.6771847 C4.35808186,37.4690792 9.53451114,39.0980059 15.0957972,39.0980059 C33.2093493,39.0980059 43.1144958,24.1039854 43.1144958,11.1008169 C43.1144958,10.6741557 43.1050148,10.2497751 43.0860529,9.82785063 C45.0099857,8.4404998 46.6796884,6.70736387 48,4.73405556" id="Fill-1" stroke="none" fill="url(#linearGradient-1)" fill-rule="evenodd"></path>
-        </svg>
-        <h2 class="t__smallCaps opt_label">Twitter</h2>
-      </div>
+        <div class="opt_twitter">
+          <a href="javascript:tweet()">
+            <svg class="opt_icon" width="48px" height="40px" viewBox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <linearGradient x1="0%" y1="-10.4963859%" x2="100%" y2="125.689171%" id="linearGradient-1">
+                        <stop stop-color="#343AE0" offset="0%"></stop>
+                        <stop stop-color="#9B35FF" offset="42.1157526%"></stop>
+                        <stop stop-color="#E56464" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path d="M48,4.73405556 C46.2339076,5.51667721 44.3359596,6.04561788 42.3439043,6.2835096 C44.3772194,5.0656303 45.9385932,3.13723369 46.6738944,0.839543523 C44.771206,1.96707309 42.6636234,2.78601008 40.4204982,3.22740799 C38.6240316,1.31497609 36.0646988,0.119903523 33.2323494,0.119903523 C27.7936135,0.119903523 23.3842642,4.52563715 23.3842642,9.95977878 C23.3842642,10.7309971 23.4715242,11.4820402 23.6393723,12.2022065 C15.4548447,11.7918608 8.19857347,7.87436662 3.34151213,1.92110876 C2.49384396,3.37442367 2.00820805,5.06475312 2.00820805,6.86806359 C2.00820805,10.28188 3.74691101,13.2937716 6.38929003,15.0583106 C4.77489301,15.0072587 3.25653462,14.5646327 1.92867332,13.8276245 C1.92797103,13.8686766 1.92797103,13.9099041 1.92797103,13.9513071 C1.92797103,18.718966 5.32250631,22.6961086 9.82754307,23.5999567 C9.00111928,23.8248662 8.1311533,23.9450401 7.23292,23.9450401 C6.59839789,23.9450401 5.98143312,23.8834619 5.38026994,23.7685511 C6.63333699,27.6779752 10.2701635,30.5228514 14.579436,30.6023241 C11.2091298,33.2414135 6.96288818,34.8145514 2.34917151,34.8145514 C1.55435093,34.8145514 0.770415889,34.7680608 0,34.6771847 C4.35808186,37.4690792 9.53451114,39.0980059 15.0957972,39.0980059 C33.2093493,39.0980059 43.1144958,24.1039854 43.1144958,11.1008169 C43.1144958,10.6741557 43.1050148,10.2497751 43.0860529,9.82785063 C45.0099857,8.4404998 46.6796884,6.70736387 48,4.73405556" id="Fill-1" stroke="none" fill="url(#linearGradient-1)" fill-rule="evenodd"></path>
+            </svg>
+            <h2 class="t__smallCaps opt_label">Twitter</h2>
+            <script language="javascript">
+              function tweet()
+              { window.open("https://twitter.com/share?url="+escape(window.location.href)+"&text="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
+            </script>
+        </a>
+        </div>
       <div class="opt_email">
         <svg class="opt_icon" width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>

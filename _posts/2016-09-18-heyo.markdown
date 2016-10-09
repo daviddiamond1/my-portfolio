@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Heyoo here's a post"
+title:  "Building a startup will cost you money"
 date:   2016-09-11 10:46:02 +0100
 image: "assets/iPhone 7 Notification Mock.png"
 categories: journal
