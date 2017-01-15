@@ -13,6 +13,7 @@ title: Comment Mode for Youtube
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/b14c852f8b.js"></script>
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/egjcgnmkdplddeidphnhdimieehgdnie">
   </head>
   <body>
     <div class="detail__container">
@@ -29,7 +30,7 @@ title: Comment Mode for Youtube
       </div>
       <h2 class="detail__description">Read comments and watch video simultaneously on YouTube</h2>
       <div class="container-center">
-        <button class="btn-large">
+        <button onclick="chrome.webstore.install()" id="install-button" class="btn-large">
           <i class="fa fa-chrome icn__24px" style="font-size: 20px;" aria-hidden="true"></i><p class="btn-text">Add to Chrome</p>
         </button>
       </div>
