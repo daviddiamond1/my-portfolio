@@ -2,77 +2,76 @@
 layout: default
 title: David Diamond
 ---
-<div class="container_main-content pure-g">
-  <div class="pure-u-1 pure-u-lg-1-3">
-      <div class="tile">
-      <a href="{{ site.github.url }}/case_study/2016/09/11/intercom-push-messaging">
-        <div>
-          <img alt="Push messaging" src="https://i.imgur.com/T7dIWEP.png" width="100%">
-          </div>
-          <div class="project_details">
-            <h2 class="c__emphasized t__smallCaps">Case study</h2>
-            <h1 class="project_title t__l c__project1Text">Intercom Push Messaging</h1>
-          </div>
-        </a>
-      </div>
-      <div class="tile">
-      <a href="https://dribbble.com/shots/2669450-Feed">
-        <div class="c__project4 p__16">
-            <img alt="Graspe" src="http://imgur.com/yAgZyKr.png" width="350px">
-          </div>
-          <div class="project_details">
-            <h2 class="c__emphasized t__smallCaps">Case Study</h2>
-            <h1 class="project_title t__l c__project1Text">Graspe</h1>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="pure-u-1 pure-u-lg-1-3">
-        <div class="tile">
-        <a href="https://intercom.io/smart-campaigns">
-          <div class="project_inner col_center">
-              <img alt="Smart Campaigns" src="https://i.imgur.com/eHkxnkR.png" width="100%">
-            </div>
-            <div class="p__24-left project_details">
-              <h2 class="c__galleryLabel t__smallCaps">Gallery</h2>
-              <h1 class="project_title t__l c__project1Text">Intercom Campaigns</h1>
-            </div>
-          </a>
-        </div>
-        <div class="tile">
-        <a href="https://divvyapp.co">
-          <div class="col_center project_inner">
-              <img alt="Divvy" src="https://i.imgur.com/Kg0v6wU.png" width="100%">
-            </div>
-            <div class="project_details p__24-left">
-              <h2 class="c__galleryLabel t__smallCaps">Gallery</h2>
-              <h1 class="project_title t__l c__project1Text">Divvy</h1>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="pure-u-1 pure-u-lg-1-3">
-        <div class="tile">
-          <a href="journal">
-            <h1 class="t__l label">Journal</h1>
-          </a>
-          <div class="jf_container">
-            {% for post in site.categories.journal %}
-            <li>
-              <h2 class="t__m c__emphasized"><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a></h2>
-            </li>
-            {% endfor %}
-          </div>
-      </div>
-      <div class="tile">
-      <a href="https://emoji.life">
-        <div class="p__24-top p__16-right p__16-left c__project3">
-            <img alt="Emoji Life" src="http://imgur.com/NdgNJEC.png" width="350px">
-          </div>
-          <div class="project_details p__24-left">
-            <h2 class="c__galleryLabel t__smallCaps">Gallery</h2>
-            <h1 class="project_title t__l c__project1Text">Emoji.Life</h1>
-          </div>
-        </a>
-      </div>
+<div class="page-container">
+  <div class="blub">
+    <h1 class="t__empHeadline">I’m David, a product designer living in Dublin…</h1>
+    <p>Most recently I’ve been designing software at Intercom. Helping internet businesses stay personal at scale working accross Desktop, iOS and Android shipping small tweaks, getting my hands dirty with code and full feature releases.
+      <br></br>
+      Right now I’m working with clients looking to build really, really well designed software. <a href="mailto:daviddiamond2@gmail.com">Sound like you?</a>
+    </p>
   </div>
+  <div class="feature">
+    <div class="feature__textContainer">
+      <h2 class="t__empHeadline m__8-bottom">Featured Project</h2>
+      <h1 class="t__empHeadline t__bold m__8-top">Intercom Campaigns</h1>
+      <a href="{{ site.github.url }}/campaigns" class="t__label">See more</a>
+    </div>
+    <img class="feature__image" alt="featured project" src="http://i.imgur.com/7AryXaG.png" width="50%">
+  </div>
+
+    <div class="pure-g">
+      <!-- column 1 -->
+      <div class="pure-u-1 pure-u-lg-1-2">
+        <!-- tile 1 -->
+          <div class="tile p__24-right">
+            <a href="{{ site.github.url }}/case_study/2016/09/11/intercom-push-messaging">
+              <div>
+                <img alt="Push messaging" src="http://imgur.com/Xk2fRK1.png" width="100%">
+              </div>
+              <div class="tile__caption">
+                <div class="tile__caption--inner">
+                  <p class="p c__333333 m__0-bottom">Intercom Push Messaging</p>
+                  <p class="t__small m__auto-top">Design</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- end tile 1 -->
+        <!-- end column 1 -->
+        </div>
+        <!-- column 2 -->
+        <div class="pure-u-1 pure-u-lg-1-2">
+        <!-- tile 2 -->
+        <div class="tile">
+          <a href="{{ site.github.url }}/case_study/2016/09/11/intercom-push-messaging">
+            <div>
+              <img alt="Graspe" src="http://imgur.com/Uigm1kO.png" width="100%">
+            </div>
+            <div class="tile__caption">
+              <div class="tile__caption--inner">
+                <p class="p c__333333 m__0-bottom">Graspe</p>
+                <p class="t__small m__auto-top">Design, PM</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end tile 2 -->
+        <!-- tile 3 -->
+        <div class="tile">
+          <a href="{{ site.github.url }}/case_study/2016/09/11/intercom-push-messaging">
+            <div>
+              <img alt="Emoji life" src="http://imgur.com/EmJisUi.png" width="100%">
+            </div>
+            <div class="tile__caption">
+              <div class="tile__caption--inner">
+                <p class="p c__333333 m__0-bottom">Emoji Life</p>
+                <p class="t__small m__auto-top">Design</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end tile 3 -->
+        <!-- end column 2 -->
+    </div>
+  </div>
+</div>

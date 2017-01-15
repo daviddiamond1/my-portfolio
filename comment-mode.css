@@ -1,0 +1,109 @@
+body {
+  background: #F8F8F8;
+}
+.detail__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  color: #E92417;
+  font-weight: 300;
+  display: inline;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.detail__icon {
+  display: inline;
+  padding-right: 8px;
+}
+.detail__description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #828690;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 8px;
+}
+.detail__container {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+.container-center {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+.btn-large {
+  background-color: #3F82F7;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.25);
+  margin-top: 32px;
+  transition: .25s;
+
+}
+.btn-large:hover {
+  transition: .3s;
+  background-color: #3575E4;
+  box-shadow: 0 6px 15px 0 rgba(0,0,0,0.30);
+
+}
+.btn-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  display: inline;
+}
+.icn__24px {
+  font-size: 20px;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  display: inline;
+  padding-right: 8px;
+}
+.video__container {
+  margin-top: 32px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.10);
+  border-radius: 8px;
+}
+.nav__avatar-left {
+  background-image: url(http://i.imgur.com/Mh0ujSD.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 64px !important;
+  outline: none;
+  overflow: hidden;
+  text-indent: -999px;
+  white-space: nowrap;
+  width: 64px !important;
+  float: left;
+}
+button {
+  background: none;
+  border: none;
+  display: inline-block;
+  text-align: center;
+}
+.cm__footer {
+  margin-top: 32px;
+  background: #fff;
+  padding-top: 16px !important;
+  padding-left: 24px;
+  padding-bottom: 24px;
+
+}
+.cm__footer-credit {
+  color: #fa886d !important;
+  font-weight: 600 !important;
+  padding-top: 16px;
+  padding-left: 24px;
+  margin-left: 24px;
+}
+.cm__footer-avatar {
+  margin-right: 24px !important;
+  margin-left: 24px !important;
+}
