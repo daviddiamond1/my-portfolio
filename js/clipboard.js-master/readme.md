@@ -40,7 +40,7 @@ First, include the script located on the `dist` folder or load it from [a third-
 Now, you need to instantiate it by [passing a DOM selector](https://github.com/zenorocha/clipboard.js/blob/master/demo/constructor-selector.html#L18), [HTML element](https://github.com/zenorocha/clipboard.js/blob/master/demo/constructor-node.html#L16-L17), or [list of HTML elements](https://github.com/zenorocha/clipboard.js/blob/master/demo/constructor-nodelist.html#L18-L19).
 
 ```js
-new Clipboard('.btn');
+new Clipboard('.btn__small');
 ```
 
 Internally, we need to fetch all elements that matches with your selector and attach event listeners for each one. But guess what? If you have hundreds of matches, this operation can consume a lot of memory.
@@ -109,7 +109,7 @@ There are cases where you'd like to show some user feedback or capture what has 
 That's why we fire custom events such as `success` and `error` for you to listen and implement your custom logic.
 
 ```js
-var clipboard = new Clipboard('.btn');
+var clipboard = new Clipboard('.btn__small');
 
 clipboard.on('success', function(e) {
     console.info('Action:', e.action);
@@ -154,7 +154,7 @@ new Clipboard('.btn', {
 Also, if you are working with single page apps, you may want to manage the lifecycle of the DOM more precisely. Here's how you clean up the events and objects that we create.
 
 ```js
-var clipboard = new Clipboard('.btn');
+var clipboard = new Clipboard('.btn__small');
 clipboard.destroy();
 ```
 

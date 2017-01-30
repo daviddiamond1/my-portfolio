@@ -56,21 +56,21 @@ describe('Clipboard', () => {
 
     describe('#listenClick', () => {
         it('should add a click event listener to the passed selector', () => {
-            let clipboard = new Clipboard('.btn');
+            let clipboard = new Clipboard('.btn__small');
             assert.isObject(clipboard.listener);
         });
     });
 
     describe('#onClick', () => {
         it('should create a new instance of ClipboardAction', () => {
-            let clipboard = new Clipboard('.btn');
+            let clipboard = new Clipboard('.btn__small');
 
             clipboard.onClick(global.event);
             assert.instanceOf(clipboard.clipboardAction, ClipboardAction);
         });
 
         it('should use an event\'s currentTarget when not equal to target', () => {
-            let clipboard = new Clipboard('.btn');
+            let clipboard = new Clipboard('.btn__small');
             let bubbledEvent = { target: global.span, currentTarget: global.button };
 
             clipboard.onClick(bubbledEvent);
@@ -96,7 +96,7 @@ describe('Clipboard', () => {
 
     describe('#destroy', () => {
         it('should destroy an existing instance of ClipboardAction', () => {
-            let clipboard = new Clipboard('.btn');
+            let clipboard = new Clipboard('.btn__small');
 
             clipboard.onClick(global.event);
             clipboard.destroy();
