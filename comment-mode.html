@@ -3,6 +3,19 @@ layout: none
 title: Comment Mode for Youtube
 ---
 <!DOCTYPE HTML>
+<!--
+Hand coded by
+
+_______ _______ _______ _______ _______     _______ _______ _______ _______ _______ _______ _______
+|\     /|\     /|\     /|\     /|\     /|   |\     /|\     /|\     /|\     /|\     /|\     /|\     /|
+| +---+ | +---+ | +---+ | +---+ | +---+ |   | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
+| |   | | |   | | |   | | |   | | |   | |   | |   | | |   | | |   | | |   | | |   | | |   | | |   | |
+| |D  | | |a  | | |v  | | |i  | | |d  | |   | |D  | | |i  | | |a  | | |m  | | |o  | | |n  | | |d  | |
+| +---+ | +---+ | +---+ | +---+ | +---+ |   | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
+|/_____\|/_____\|/_____\|/_____\|/_____\|   |/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|
+
+in Dublin, 2016
+                                                                                                                -->
 <html>
   <head>
     <meta charset="utf-8">
@@ -12,6 +25,14 @@ title: Comment Mode for Youtube
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://use.typekit.net/vdr7tuq.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.16/clipboard.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.js"></script>
+    <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="https://use.fontawesome.com/b14c852f8b.js"></script>
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/egjcgnmkdplddeidphnhdimieehgdnie">
     <script>
@@ -24,6 +45,30 @@ title: Comment Mode for Youtube
       ga('send', 'pageview');
 
     </script>
+    <script>
+
+      $(function () {
+      $(document).tooltip({
+          content: function () {
+              return $(this).prop('title');
+          },
+          show: null,
+          close: function (event, ui) {
+              ui.tooltip.hover(
+
+              function () {
+                  $(this).stop(true).fadeTo(400, 1);
+              },
+
+              function () {
+                  $(this).fadeOut("400", function () {
+                      $(this).remove();
+                  })
+              });
+          }
+      });
+    });
+  </script>
   </head>
   <body>
     <div class="detail__container">
@@ -51,11 +96,72 @@ title: Comment Mode for Youtube
       </div>
     </div>
     <div class="cm__footer">
+      <div class="footer">
+        <div class="footer__inner">
+          <h1 class="t__superLarge">Thanks for stopping by</h1>
+          <div class="footer__icon-group">
+            <span title="<button class='btn__small' id='copyToClipboard' data-clipboard-text='daviddiamond2@gmail.com' > Copy </button> <a href='mailto:daviddiamond2@gmail.com'>Send email</a>" class="icon footer__icon-group--icon p__8-bottom footer__icon-group--email">
+              <svg width="32px" height="20px" viewBox="0 6 32 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="email_icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 6.000000)">
+                <path d="M0,1.99079514 C0,0.891309342 0.889261723,0 2.00174332,0 L29.9982567,0 C31.103789,0 32,0.898212381 32,1.99079514 L32,18.0092049 C32,19.1086907 31.1107383,20 29.9982567,20 L2.00174332,20 C0.89621101,20 0,19.1017876 0,18.0092049 L0,1.99079514 Z M16,13.4539474 C15.8656,13.4539474 15.7312,13.4166447 15.6131556,13.3427303 L3.52426667,5.74404605 C3.19502222,5.5375 3.10044444,5.10921053 3.31448889,4.78868421 C3.52782222,4.47023026 3.968,4.37697368 4.29724444,4.58490132 L16,11.9404276 L27.7020444,4.58490132 C28.0327111,4.37697368 28.4728889,4.46953947 28.6855111,4.78868421 C28.8995556,5.10921053 28.8049778,5.5375 28.4750222,5.74404605 L16.3861333,13.3427303 C16.2688,13.4166447 16.1344,13.4539474 16,13.4539474 Z M3.91182222,16.2171053 C3.66506667,16.2171053 3.42471111,16.0920724 3.29386667,15.8689474 C3.09902222,15.5380592 3.21706667,15.1159868 3.5584,14.9267105 L8.53617778,12.1635526 C8.87751111,11.9749671 9.312,12.0889474 9.50613333,12.4205263 C9.70097778,12.7514145 9.58293333,13.1734868 9.2416,13.3627632 L4.26382222,16.1259211 C4.15288889,16.1880921 4.03128889,16.2171053 3.91182222,16.2171053 Z M28.0881778,16.2171053 C27.9687111,16.2171053 27.8471111,16.1880921 27.7361778,16.1259211 L22.7584,13.3627632 C22.4170667,13.1734868 22.2990222,12.7514145 22.4938667,12.4205263 C22.688,12.0889474 23.1239111,11.9749671 23.4638222,12.1635526 L28.4416,14.9267105 C28.7829333,15.1159868 28.9009778,15.5380592 28.7061333,15.8689474 C28.5752889,16.0920724 28.3349333,16.2171053 28.0881778,16.2171053 Z" id="Combined-Shape" fill="#7B939E"></path>
+              </g>
+            </svg>
+          </span>
+          <span class="icon footer__icon-group--icon">
+            <a href="http://twitter.com/david_diam">
+            <svg width="32px" height="26px" viewBox="0 4 32 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M10.1034667,29.9392 C22.0992,29.9392 28.6592,20.00128 28.6592,11.3834667 C28.6592,11.1011947 28.6534507,10.8202027 28.6407893,10.54048 C29.914176,9.61992533 31.0209493,8.47114667 31.8939093,7.16341333 C30.725376,7.682816 29.4678827,8.03246933 28.148736,8.19013333 C29.4951893,7.38274133 30.528896,6.10554667 31.016576,4.58298667 C29.7565227,5.329984 28.3611093,5.87290667 26.8753493,6.16602667 C25.6852693,4.8984 23.990976,4.10554667 22.1149227,4.10554667 C18.5134293,4.10554667 15.592896,7.02618667 15.592896,10.6262933 C15.592896,11.1380587 15.650112,11.6358507 15.7620053,12.1133333 C10.3417387,11.8405973 5.53544533,9.24549333 2.31880533,5.29946667 C1.75872,6.26324267 1.43576533,7.38277333 1.43576533,8.57733333 C1.43576533,10.8399467 2.58712533,12.8373867 4.337952,14.00592 C3.26797867,13.9728619 2.26285867,13.6791467 1.384352,13.1902613 C1.383392,13.2176235 1.383392,13.2442997 1.383392,13.2735435 C1.383392,16.4319435 3.631392,19.0689568 6.61549867,19.6665035 C6.067488,19.8159008 5.490912,19.8960075 4.89581867,19.8960075 C4.47623467,19.8960075 4.06744533,19.8547104 3.670112,19.7783968 C4.500384,22.3696501 6.90797867,24.2553035 9.76237867,24.3079968 C7.530272,26.0575435 4.718432,27.0995701 1.662432,27.0995701 C1.136672,27.0995701 0.61728,27.0696651 0.106805333,27.0092939 C2.99309867,28.8593205 6.42029867,29.9387872 10.1038187,29.9387872" id="icon" stroke="none" fill="#7B939E" fill-rule="evenodd"></path>
+            </svg>
+            </a>
+          </span>
+          <span class="icon footer__icon-group--icon">
+            <a href="http://medium.com/@david_diam">
+            <svg width="32px" height="28px" viewBox="0 2 32 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="medium" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 2.415094)">
+                    <path d="M22.1240755,0.323018868 C21.6428679,0.0824150943 21.2492075,0.325735849 21.2492075,0.863698113 L21.2492075,22.2641509 L30.0307925,26.6550943 C30.9971321,27.1381132 31.7805283,26.8 31.7805283,25.8997736 L31.7805283,5.29177358 C31.7805283,5.20573585 31.7316226,5.12664151 31.6546415,5.088 L22.1240755,0.323018868" id="Fill-1" fill="#C5D0D4"></path>
+                    <path d="M10.7181887,16.9986415 L20.7366038,0.718490566 C21.018566,0.260226415 21.6428679,0.0824150943 22.1240755,0.323018868 L31.6655094,5.09343396 C31.7273962,5.1245283 31.749434,5.20181132 31.7132075,5.26067925 L21.2492075,22.2641509 L10.7181887,16.9986415" id="Fill-2" fill="#9FB1B9"></path>
+                    <path d="M1.64498113,0.614641509 C0.842867925,0.213433962 0.571169811,0.510188679 1.04120755,1.27396226 L10.7181887,16.9986415 L21.2492075,22.2641509 L10.7408302,5.18792453 C10.7260377,5.16377358 10.7046038,5.14445283 10.6792453,5.13177358 L1.64498113,0.614641509" id="Fill-3" fill="#8DA2AB"></path>
+                    <path d="M10.7181887,25.8997736 C10.7181887,26.7963774 10.0618868,27.2018113 9.26007547,26.8009057 L1.06173585,22.7015849 C0.580528302,22.4609811 0.186867925,21.824 0.186867925,21.2860377 L0.186867925,1.18973585 C0.186867925,0.47245283 0.711849057,0.147924528 1.35335849,0.468830189 L10.661434,5.12271698 C10.6961509,5.14022642 10.7181887,5.17554717 10.7181887,5.21418868 L10.7181887,25.8997736" id="Fill-4" fill="#7B939E"></path>
+                </g>
+            </svg>
+            </a>
+          </span>
+          </div>
+          <p class="t__small">Subscribe to incredibly infrequent updates</p>
+          <div id="mc_embed_signup">
+            <form action="//squarespace.us11.list-manage.com/subscribe/post?u=03a3dc3c5580ddfdd128aa237&amp;id=8489aa99f7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="footer__email-form" id="mc_embed_signup_scroll">
+                  <div class="mc-field-group footer__email-form--group">
+                  	<input type="email" value="" name="EMAIL" class="footer__email-form--field required email" id="mce-EMAIL" placeholder="Your email address...">
+                    <input type="submit" value=" " name="subscribe" id="mc-embedded-subscribe" class="button btn__subscribe">
+                  </div>
+                	<div id="mce-responses" class="clear">
+                		<div class="response" id="mce-error-response" style="display:none"></div>
+                		<div class="response" id="mce-success-response" style="display:none"></div>
+                	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_03a3dc3c5580ddfdd128aa237_8489aa99f7" tabindex="-1" value=""></div>
+                    </div>
+                  </div>
+            </form>
+          </div>
+        </div>
       <div class="cm-footer__left">
         <span class="cm__footer-avatar nav__avatar-left">David Diamond</span>
         <a href="{{ site.github.url }}/"><h1 class="t__small cm__footer-credit" style="margin-bottom: 0px;">Built and designed by David Diamond in Dublin</h1></a>
         <a href="https://twitter.com/oelmekki"><p class="t__small" style="margin-top: 0px;">Thanks to Olivier, the Chrome Wizard, for all of his help</p></a>
       </div>
-    </div>
     </body>
+    <footer>
+      <script>
+      var clipboard = new Clipboard('.btn__small');
+      clipboard.on('success', function(e) {
+          console.log(e);
+          document.getElementById("copyToClipboard").innerHTML = "Copied 👍";
+      });
+      clipboard.on('error', function(e) {
+          console.log(e);
+      });
+      </script>
+      <script src="dist/clipboard.min.js"></script>
+    </footer>
 </html>
