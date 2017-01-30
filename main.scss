@@ -45,10 +45,20 @@ i {
 	color: #7B939E !important;
 }
 .ui-widget {
-  font-family: 'proxima-nova' !important;
+  font-family: 'proxima-nova'!important;
   font-size: 15px !important;
-  color: #7B939E !important;
+  color: #7b939e !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
 }
+.btn__small {
+  color: #7b939e !important;
+  font-family: 'proxima-nova'!important;
+  font-size: 15px !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+}
+
 // padding //
 .p__8 {
   padding: 8px;
