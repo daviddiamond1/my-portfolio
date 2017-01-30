@@ -38,6 +38,17 @@ a:hover:after {
 i {
   padding: 4px;
 }
+.featherlight {
+  background: rgba(255, 255, 255, 0.77) !important;
+}
+.ui-widget-content a {
+	color: #7B939E !important;
+}
+.ui-widget {
+  font-family: 'proxima-nova' !important;
+  font-size: 15px !important;
+  color: #7B939E !important;
+}
 // padding //
 .p__8 {
   padding: 8px;
@@ -605,32 +616,32 @@ button {
     margin-right: 24px;
   }
 // Collaborators component //
+  .collaborator {
+    display: flex;
+  }
+
   .collaborators__heading {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
   }
-  .collaborator__container-2 {
-    display: inline;
-  }
+
   .collaborator__avatar {
     display: inline;
     border-radius: 40px;
     width: 40px;
     height: 40px;
+    margin-top: 8px;
   }
   .collaborator__name {
     display: inline;
     padding-left: 13px;
     position: relative;
-    bottom: 24px;
-    margin-top: 0px;
+    font-family: 'proxima-nova';
+    font-size: 20px;
+    font-weight: 600;
   }
   .collaborator__role {
-    padding-left: 56px;
     display: inline;
-    margin-top: 0px;
     position: relative;
-    bottom: 24px;
   }
 
 // Image list component //
