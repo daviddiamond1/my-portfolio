@@ -312,7 +312,9 @@ h2 {
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2) {
       .page-container {
-        padding: 96px;
+        padding-top: 16px;
+        padding-right: 96px;
+        padding-left: 96px;
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -326,7 +328,9 @@ h2 {
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
       .page-container {
-        padding: 96px;
+        padding-top: 16px;
+        padding-right: 96px;
+        padding-left: 96px;
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -350,7 +354,9 @@ h2 {
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
       .page-container {
-        padding: 96px;
+        padding-top: 16px;
+        padding-right: 96px;
+        padding-left: 96px;
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -366,7 +372,9 @@ h2 {
     and (max-device-width: 736px)
     and (-webkit-min-device-pixel-ratio: 3) {
       .page-container {
-        padding: 96px;
+        padding-top: 16px;
+        padding-right: 96px;
+        padding-left: 96px;
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -381,7 +389,9 @@ h2 {
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
       .page-container {
-        padding: 96px;
+        padding-top: 16px;
+        padding-right: 96px;
+        padding-left: 96px;
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -391,7 +401,9 @@ h2 {
 
   @media screen and (min-width: 480px) {
     .page-container {
-      padding: 96px;
+      padding-top: 16px;
+      padding-right: 96px;
+      padding-left: 96px;
       margin-top: auto;
       margin-left: auto;
       margin-right: auto;
@@ -409,7 +421,9 @@ h2 {
   }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .page-container__wide {
-    padding: 96px;
+    padding-top: 16px;
+    padding-right: 96px;
+    padding-left: 96px;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
