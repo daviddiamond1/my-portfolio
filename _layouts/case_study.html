@@ -117,6 +117,34 @@
     </div>
   </body>
   <footer>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script>
+      var vid = document.getElementById("video");
+
+      function playVid() {
+          vid.play();
+      }
+
+      function pauseVid() {
+          vid.pause();
+      }
+    </script>
+    <script>
+    (function($) {
+    $('.video_overlay').click(function() {
+      $(this).remove();
+    });
+    })(jQuery);
+    </script>
+    <script>
+        $('#video').hover(function toggleControls() {
+        if (this.hasAttribute("controls")) {
+            this.removeAttribute("controls")
+        } else {
+            this.setAttribute("controls", "controls")
+        }
+    })
+    </script>
     <script>
     var clipboard = new Clipboard('.btn');
     clipboard.on('success', function(e) {
