@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: David Diamond
 email: hi@daviddiamond.co
-description: I’m David, a product designer living in Dublin… Most recently I’ve been designing software at Intercom. Helping internet businesses stay personal at scale working accross Desktop, iOS and Android shipping small tweaks, getting my hands dirty with code and full feature releases. Right now I’m working with clients looking to build really, really well designed software.
+description: I’m David, a product designer living in Dublin… Most recently I’ve been designing software at Intercom. Helping internet businesses stay personal at scale working across Desktop, iOS and Android shipping small tweaks, getting my hands dirty with code and full feature releases. Right now I’m working with clients looking to build really, really well designed software.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://daviddiamond.co" # the base hostname & protocol for your site
 gems: [jekyll-admin]
