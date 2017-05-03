@@ -205,6 +205,13 @@ h2 {
   text-transform: uppercase;
   font-weight: 600;
 }
+.t__label--small {
+   @extend .t__label;
+  font-size: 16px !important;
+}
+.t__icn--small {
+  font-size: 16px;
+}
 .t__bold {
   font-weight: 600;
 }
